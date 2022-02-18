@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="style.css">
+
+    <title>Movie-Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="row">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#">about-us</a></li>
+                    <li><a href="#contactus">contact-us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="centered">
+        <h5>welcome to DCEU Universe</h5>
+        <p><small>Check the dceu movies details</small></p>
+        <a class="movie-button" href="#movie">Movies</a>
+    </div>
+    <div class="image-row" id="movie">
+        <div class="column">
+            <img class="image1" src="11.jpg" alt="man of steel" onclick="window.open('11.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt0770828/" target="_blank">More Info</a>
+        </div>
+        <div class="column">
+            <img class="image1" src="66.jpg" alt="batman vs superman" onclick="window.open('66.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt2975590/" target="_blank">More Info</a>
+        </div>
+        <div class="column">
+            <img class="image1" src="55.png" alt="Suicide Squad" onclick="window.open('55.png', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt6334354/" target="_blank">More Info</a>
+        </div>
+        <div class="column">
+            <img class="image1" src="22.jpg" alt="Wonder Woman" onclick="window.open('22.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt0451279/" target="_blank">More Info</a>
+        </div>
+        <div class="column">
+            <img class="image1" src="33.jpg" alt="Aquaman" onclick="window.open('33.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt1477834/" target="_blank">More Info</a>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="column1">
+            <img class="image1" src="88.jpg" alt="Shazam!" onclick="window.open('88.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt0448115/" target="_blank">More Info</a>
+        </div>
+        <div class="column1">
+            <img class="image1" src="99.jpg" alt="Birds of Prey" onclick="window.open('99.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt7713068/" target="_blank">More Info</a>
+        </div>
+        <div class="column1">
+            <img class="image1" src="77.jpg" alt="Wonder Woman 1984" onclick="window.open('77.jpg', '_blank');"
+                style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt7126948/" target="_blank">More Info</a>
+        </div>
+        <div class="column1">
+            <img class="image1" src="44.jpg" alt="Zack Snyder's Justice League"
+                onclick="window.open('44.jpg', '_blank');" style="width:100%">
+            <a class="image-button" href="https://www.imdb.com/title/tt12361974/" target="_blank">More Info</a>
+        </div>
+    </div>
+    <div class="container">
+
+        <h2>For suggestion kindly write to us!</h2>
+        <form action="#" id="contactus" type="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Gender">Gender</label>
+                </div>
+                <div class="col-75">
+                    <select id="Gender" name="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="messsage">Messsage</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="messsage" name="messsage" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+                <a class="back" href="#header"><img
+                        src="https://img.icons8.com/material-two-tone/24/000000/long-arrow-up.png" /> </a>
+
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <p>thank you for checking out our website</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: relative;
+}
+
+nav ul{
+    list-style: none;   
+    margin: 20px 20px 0 0;
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav ul li a:link, nav ul li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px 20px;
+    /* background-color: rgb(184, 189, 121); */
+    /* border-radius: 25px; */
+    color: rgb(255, 255, 255);
+
+}
+
+nav ul li a:active, nav ul li a:hover{
+    border-bottom:2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
+    /* background-color: brown; */
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    background-attachment: fixed;
+}
+
+.centered{
+    position: absolute;
+    font-weight: 300;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgb(211, 211, 211);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.column,.column1 {
+    opacity: 0.7;
+    transform: scale(1.0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.column:hover, .column1:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+
+
+.image1{
+    width:  100px;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.info{
+    width: 100%;
+    padding: 10px 20px;
+    color: rgb(187, 187, 187);
+    text-transform: uppercase;
+    color: rgb(51, 51, 47);
+    font-weight: 300;
+    opacity: 1;
+}
+
+
+section{
+    background-color: rgb(204, 204, 204);
+}
+
+.image-row{
+    background-color: rgb(0, 0, 0);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  h2{
+      text-align: center;
+      font-weight: 200;
+
+  }
+
+  small{
+      font-size: 20px;
+      text-align: center;
+      padding-left: 60px;
+      font-weight: 300;
+  }
+
+  .image-button{
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      padding: 10px 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: rgb(51, 51, 47);
+      font-weight: 300;
+      border: 2px solid rgb(175, 171, 171);
+  }
+
+
+  .movie-button{
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 300;
+    border: 2px solid rgb(175, 171, 171);
+    opacity: 1;
+  }
+
+  .movie-button:hover,.movie-button:active{
+    opacity: 0.5;
+  }
+
+
+  footer{
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+  .back img{
+    border-radius: 50%;
+    border: 2px solid rgb(24, 24, 24);
+    margin-left: 20%;
+  }
+
+  .back img:hover{
+    opacity: 0.5;
+  }
